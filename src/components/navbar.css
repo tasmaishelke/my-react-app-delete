@@ -46,7 +46,7 @@ nav ul li
 }
 
 
-.navbar-button
+button
 {
     background-color: gray;
     color: #212121;
@@ -56,5 +56,4 @@ nav ul li
     outline: 0px;
     border-radius: 30px;
     cursor: pointer;
-
 }

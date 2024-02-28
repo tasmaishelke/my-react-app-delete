@@ -16,7 +16,7 @@ function Navbar(){
                         <Link to="/contact"> Contact </Link> 
                     </li>
                     <li> 
-                       <button className='navbar-button'> <Link to="/login"> Login </Link>  </button>
+                       <button className='button'> <Link to="/login"> Login </Link>  </button>
                     </li>
                 </ul>
         </nav>        

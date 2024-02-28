@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FaUser, FaLock } from "react-icons/fa";
 import './registration.css'
 
 function Registration()
@@ -14,6 +15,10 @@ function Registration()
     {
         e.preventDefault()
         console.log(email)
+        console.log(password)
+        console.log(firstName)
+        console.log(lastName)
+
     }
 
 
@@ -23,24 +28,28 @@ function Registration()
                 <form onSubmit={details}>
                     <h1>Registration</h1>
 
-                    <div className="class-email">
-                        <label htmlFor="email"> Email </label>
+                    <label htmlFor="email"> Email </label>
+                    <div className="input">
                         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="name@gmail.com" name="email" />                        
+                        <FaUser className="icon" />
                     </div>
 
-                    <div className="class-password">
-                        <label htmlFor="password"> Password </label>
+                    <label htmlFor="password"> Password </label>
+                    <div className="input">
                         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" id="password" placeholder="*****" name="password" />                        
+                        <FaLock className="icon"/>
                     </div>
                     
-                    <div className="class-firstname">
-                        <label htmlFor="firstName"> First Name </label>
+                    <label htmlFor="firstName"> First Name </label>
+                    <div className="input">
                         <input value={firstName} onChange={(e) => setFirstName(e.target.value)} type="text" id="firstName" name="firstName" />                        
+                        <FaUser className="icon" />
                     </div>
 
-                    <div className="class-lastname">
-                        <label htmlFor="lastName"> Last Name </label>
+                    <label htmlFor="lastName"> Last Name </label>
+                    <div className="input">
                         <input value={lastName} onChange={(e) => setLastName(e.target.value)} type="text" id="lastName" name="lastName" />                        
+                        <FaUser className="icon" />
                     </div>
 
                     <button className="class-registration-button" type="submit" > Sign-Up </button>
