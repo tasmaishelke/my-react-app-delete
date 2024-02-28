@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FaUser, FaLock } from "react-icons/fa";
+import './login.css'
 
 function Login()
 {
@@ -18,14 +19,14 @@ function Login()
                 <form onSubmit={details}>
                     <h1>Login</h1>
 
-                    <div className="input">
-                        <label htmlFor="email"> Email </label>
+                    <label htmlFor="email"> Email </label>
+                    <div className="input">                        
                         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" placeholder="name@gmail.com" name="email" />
                         <FaUser className="icon" />
                     </div>
 
+                    <label htmlFor="password"> Password </label>
                     <div className="input">
-                        <label htmlFor="password"> Password </label>
                         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" id="password" placeholder="*****" name="password" />
                         <FaLock className="icon"/>
                     </div>
