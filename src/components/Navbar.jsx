@@ -4,8 +4,11 @@ import './navbar.css'
 function Navbar(){
     return(
         <nav className="container">
-            <Link to="/" className="class-website-name">Astrology </Link>
+            <h1 className="class-website-name">Astrology </h1>
                 <ul>
+                    <li> 
+                        <Link to="/"> Home </Link> 
+                    </li>
                     <li> 
                         <Link to="/about"> About </Link> 
                     </li>
