@@ -6,7 +6,6 @@ import Registration from './pages/Registration'
 import ErrorPage from './pages/ErrorPage'
 import {Route, Routes} from 'react-router-dom'
 
-
 function Routing()
 {
     return(

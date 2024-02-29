@@ -4,7 +4,7 @@ import './navbar.css'
 function Navbar(){
     return(
         <nav className="container">
-            <h1 className="class-website-name">Astrology </h1>
+            <h1 className="class-website-name">Horoscope</h1>
                 <ul>
                     <li> 
                         <Link to="/"> Home </Link> 
@@ -16,7 +16,7 @@ function Navbar(){
                         <Link to="/contact"> Contact </Link> 
                     </li>
                     <li> 
-                       <button className='button'> <Link to="/login"> Login </Link>  </button>
+                       <button className="button"> <Link to="/login"> Login </Link>  </button>
                     </li>
                 </ul>
         </nav>        
